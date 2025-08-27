@@ -47,7 +47,7 @@ const FactsFindersExcelDownload = () => {
       if (endDate) params.end = endDate;
 
       const res = await axios.get(
-        "http://localhost:5000/api/factsfinders/excel",
+        "https://facts-finder-form.onrender.com/api/factsfinders/excel",
         {
           params,
           responseType: "blob",

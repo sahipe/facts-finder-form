@@ -4,7 +4,11 @@ import cors from "cors";
 import XLSX from "xlsx";
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://facts-finder.netlify.app",
+  })
+);
 app.use(express.json());
 
 // MongoDB Connection

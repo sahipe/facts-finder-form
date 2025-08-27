@@ -121,7 +121,7 @@ const FactsFinders = () => {
             const formWithLocation = { ...form, latitude, longitude };
 
             await axios.post(
-              "http://localhost:5000/api/factsfinders",
+              "https://facts-finder-form.onrender.com/api/factsfinders",
               formWithLocation
             );
 
